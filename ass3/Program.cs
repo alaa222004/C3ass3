@@ -224,6 +224,29 @@ namespace ass3
 
             #endregion
 
+            #region Q13
+
+            //13 - Write a program in C# Sharp to find the sum of all elements of the array.
+
+           
+            int nv = int.Parse(Console.ReadLine()!);
+
+            int[] numbers = new int[nv];
+            int sum = 0;
+
+            for (int i = 0; i < nv; i++)
+            {
+            
+                numbers[i] = int.Parse(Console.ReadLine()!);
+                sum += numbers[i];
+            }
+
+            Console.WriteLine(sum);
+            ;
+
+
+            #endregion
+
 
 
         }
