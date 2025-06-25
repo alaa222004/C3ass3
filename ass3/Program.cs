@@ -1,5 +1,7 @@
 ﻿using System;
 using System.ComponentModel;
+using System.Drawing;
+using System.Globalization;
 using System.Reflection.Metadata;
 using System.Security.Cryptography;
 using System.Xml.Linq;
@@ -153,9 +155,6 @@ namespace ass3
             Console.WriteLine(result);
             #endregion
 
-
-
-
             #region Q10
 
 
@@ -175,6 +174,32 @@ namespace ass3
             Console.WriteLine(avr);
            Console.WriteLine(pres);
             #endregion
+
+            #region Q11
+
+            //11 - Write a program to input the month number and print the number of days in that month.
+           
+            int num_month=int.Parse(Console.ReadLine() !);
+
+            switch (num_month) { 
+                case 1 : case 3: case 5 : case 7 : case 8 : case 10 :case 12 :
+                    Console.WriteLine("31 days");
+                    break;
+
+                case 4: case 6: case 9: case 11:
+                        Console.WriteLine("30 days");
+                        break ;
+                case 2:
+                    Console.WriteLine("28 or 29 days");
+                    break;
+
+                default:
+                    Console.WriteLine("Invalid month number");
+                    break;
+            }
+            #endregion
+
+     
 
         }
     }
