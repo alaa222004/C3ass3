@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel;
+using System.Security.Cryptography;
 using System.Xml.Linq;
 
 namespace ass3
@@ -67,6 +68,23 @@ namespace ass3
                 Console.WriteLine($"max is z= {z}");
             }
 
+            #endregion
+
+            #region Q4
+            //4 - Write a program that allows the user to insert an integer number then check If
+            //    a number is even or odd.
+
+            int numm;
+            numm=int.Parse(Console.ReadLine() !);
+
+            if (numm % 2 == 0)
+            {
+                Console.WriteLine("number is even");
+            }
+            else
+            {
+                Console.WriteLine("number is odd");
+            }
             #endregion
         }
     }
