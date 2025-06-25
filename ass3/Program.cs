@@ -105,7 +105,17 @@ namespace ass3
                 Console.WriteLine("consonant");            }
             #endregion
 
+            #region Q6
+            //6 - Write a program that allows the user to insert an integer then print all
+            //    numbers between 1 to that number.
 
+            int numberr=int.Parse(Console.ReadLine() !);
+
+            for(int i = 1; i <= numberr; i++)
+            {
+                Console.WriteLine(i);
+            }
+            #endregion
         }
     }
 }
