@@ -247,6 +247,13 @@ namespace ass3
 
             #endregion
 
+            #region Q14
+            //14 - Write a program in C# Sharp to count the frequency of each element of an array.
+
+            //??
+            #endregion
+
+          
 
 
         }
