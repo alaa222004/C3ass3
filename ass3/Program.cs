@@ -55,11 +55,11 @@ namespace ass3
             y=int.Parse(Console.ReadLine()!);
             z = int.Parse(Console.ReadLine()!);
 
-            if (x > y && x > z)
+            if (x >= y && x >= z)
             {
                 Console.WriteLine($"max is x= {x}");
             }
-            else if (y > z && y > x)
+            else if (y >= z && y >= x)
             {
                 Console.WriteLine($"max is y= {y}");
 
@@ -68,6 +68,8 @@ namespace ass3
             {
                 Console.WriteLine($"max is z= {z}");
             }
+
+        
 
             #endregion
 
@@ -150,6 +152,30 @@ namespace ass3
          double result=Math.Pow(power, num_power);
             Console.WriteLine(result);
             #endregion
+
+
+
+
+            #region Q10
+
+
+            //10 - Write a program to enter marks of five subjects and calculate total, 
+            //    average and percentage.
+
+            int[] marks= new int[5];
+            int total=0;
+            for (int i = 0; i < 5; i++)
+            {
+                marks[i] =int.Parse(Console.ReadLine() !);
+                total += marks[i];
+            }
+            double avr = total / 5;
+            double pres = (total / 500 * 100);
+            Console.WriteLine(total);
+            Console.WriteLine(avr);
+           Console.WriteLine(pres);
+            #endregion
+
         }
     }
 }
