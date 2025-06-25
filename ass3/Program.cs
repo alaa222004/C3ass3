@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel;
+using System.Xml.Linq;
 
 namespace ass3
 {
@@ -40,6 +41,32 @@ namespace ass3
             {
                 Console.WriteLine("postive");
             }
+            #endregion
+
+            #region Q3
+
+            //3 - Write a program that takes 3 integers from the user then prints the max 
+            //    element and the min element.
+
+            int x, y, z;
+            x=int.Parse(Console.ReadLine()!);
+            y=int.Parse(Console.ReadLine()!);
+            z = int.Parse(Console.ReadLine()!);
+
+            if (x > y && x > z)
+            {
+                Console.WriteLine($"max is x= {x}");
+            }
+            else if (y > z && y > x)
+            {
+                Console.WriteLine($"max is y= {y}");
+
+            }
+            else
+            {
+                Console.WriteLine($"max is z= {z}");
+            }
+
             #endregion
         }
     }
