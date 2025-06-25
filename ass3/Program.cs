@@ -281,6 +281,27 @@ namespace ass3
 
             #endregion
 
+            #region Q16
+            //16 - Write a program in C# Sharp to find the second largest element in an array.
+
+            int lag=int.Parse(Console.ReadLine()!);
+            int[] arrlag=new int[lag];
+            for(int i = 0;i < lag; i++)
+            {
+                arrlag[i]= int.Parse(Console.ReadLine()!);
+            }
+             Array.Sort(arrlag);
+            Array.Reverse(arrlag);
+            int maxx = arrlag[0];
+            int scemax = -1;
+           for(int i = 1;i < lag; i++)
+            {
+                if(arrlag[i] !=max)
+                    scemax = arrlag[i];
+            }
+
+            #endregion
+
 
 
 
