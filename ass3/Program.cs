@@ -199,7 +199,32 @@ namespace ass3
             }
             #endregion
 
-     
+            #region Q12
+
+            //12 - .Write a program that prints an identity matrix using for loop, in other words takes 
+            //   a value n from the user and shows th identity table of size n * n.
+
+            int n=int.Parse(Console.ReadLine() !);
+
+            for(int i = 0; i<= n;i++)
+            {
+                for(int j = 0; j<= n;j++)
+                {
+                    if (i == j)
+                        Console.WriteLine("1");
+                    else
+                        Console.WriteLine("0");
+                }
+            }
+
+
+
+
+
+
+            #endregion
+
+
 
         }
     }
