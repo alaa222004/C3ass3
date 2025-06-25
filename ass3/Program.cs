@@ -141,6 +141,15 @@ namespace ass3
                     Console.WriteLine(i);
             }
             #endregion
+
+            #region Q9
+            //9 - Write a program that takes two integers then prints the power.
+
+            int power=  int.Parse(Console.ReadLine() !);
+            int num_power=int.Parse(Console.ReadLine() !);
+         double result=Math.Pow(power, num_power);
+            Console.WriteLine(result);
+            #endregion
         }
     }
 }
