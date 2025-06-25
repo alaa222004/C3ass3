@@ -253,7 +253,35 @@ namespace ass3
             //??
             #endregion
 
-          
+            #region Q15
+
+            //15 - Write a program in C# Sharp to find maximum and minimum element in an array
+
+            
+            int a = int.Parse(Console.ReadLine()!);
+            int[] arr = new int[a];
+          ;
+            for (int i = 0; i < a; i++)
+            {
+                arr[i] = int.Parse(Console.ReadLine()!);
+            }
+            int max = arr[0];
+            int min = arr[0];
+
+            for (int i = 1; i < a; i++)
+            {
+                if (arr[i] > max)
+                    max = arr[i];
+                if (arr[i] < min)
+                    min = arr[i];
+            }
+
+            Console.WriteLine(max);
+            Console.WriteLine(min);
+
+            #endregion
+
+
 
 
         }
