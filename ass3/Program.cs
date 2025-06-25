@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel;
+using System.Reflection.Metadata;
 using System.Security.Cryptography;
 using System.Xml.Linq;
 
@@ -86,6 +87,25 @@ namespace ass3
                 Console.WriteLine("number is odd");
             }
             #endregion
+
+            #region Q5
+
+            //5 - Write a program that takes character from the user then if it is a vowel 
+            //    chars(a, e, I, o, u) then print(vowel) otherwise print(consonant).
+
+            char character;
+            character=char.Parse(Console.ReadLine() !);
+
+            if(character=='a'||character=='e'||character=='i'||character=='o'||character=='u')
+            {
+                Console.WriteLine("vowel");
+            }
+            else
+            {
+                Console.WriteLine("consonant");            }
+            #endregion
+
+
         }
     }
 }
